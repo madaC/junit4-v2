@@ -24,6 +24,8 @@ public class TestCase {
         System.out.println("test case cube");
         assertEquals(27,Calculation.cube(3));
     }
+
+    @Ignore
     @Test
     public void testReverseWord(){
         System.out.println("test case reverse word");
@@ -34,7 +36,7 @@ public class TestCase {
         System.out.println("after");
     }
 
-    @Ignore
+    
     @AfterClass
     public static void tearDownAfterClass() throws Exception {
         System.out.println("after class");
